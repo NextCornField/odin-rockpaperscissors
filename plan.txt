@@ -1,0 +1,10 @@
+Phase 1 - Initial Rock Paper Scissors function
+    Set user value to input (accept all variations of case)
+    Set computer value to Rock
+    write conditional as follows (U = user C = computer)
+        U(Rock) > C(Scissors) -> U win
+        U(Rock) < C(Paper) -> C win
+        U(Rock) = C(Rock) -> Tie
+
+        Repeat logic for U(Paper) & U(Scissors)
+    Display who won
