@@ -67,6 +67,24 @@ function playRound(playerSelection, computerSelection = "Rock") {
 ;    return result;
 }
 
+function computerPlay() {
+    let computerSelection = "Rock";
+    let num = Math.random() * 3;
+    console.log(Math.ceil(num));
+
+    if ((Math.ceil(num) == 1)) {
+        return computerSelection = "Rock";
+    }
+    else if ((Math.ceil(num) == 2)) {
+        return computerSelection = "Scissors";
+    }
+    else if ((Math.ceil(num) == 3)) {
+        return computerSelection = "Paper";
+    }
+
+}
+
 var playerSelection = "paper";
+var computerSelection = null;
 
 console.log(playRound(playerSelection,"rock"))
