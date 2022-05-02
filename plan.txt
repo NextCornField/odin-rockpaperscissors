@@ -8,3 +8,7 @@ Phase 1 - Initial Rock Paper Scissors function
 
         Repeat logic for U(Paper) & U(Scissors)
     Display who won
+
+Phase 2 - Random Slector for computer
+    Assign value for rock paper and Scissors (1-3)
+    UJse random number generator, multiply by 3 and ceiling round
