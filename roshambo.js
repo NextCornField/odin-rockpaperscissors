@@ -1,4 +1,21 @@
-function playRound(playerSelection, computerSelection = "Rock") {
+function computerPlay() {
+    let computerSelection = null;
+    let num = Math.random() * 3;
+    console.log(Math.ceil(num));
+
+    if ((Math.ceil(num) == 1)) {
+        return computerSelection = "rock";
+    }
+    else if ((Math.ceil(num) == 2)) {
+        return computerSelection = "scissors";
+    }
+    else if ((Math.ceil(num) == 3)) {
+        return computerSelection = "paper";
+    }
+
+}
+
+function playRound(playerSelection, computerSelection) {
     if (typeof(playerSelection) != "string") {
         console.error("playerSelection needs to be a string");
     }
@@ -7,7 +24,7 @@ function playRound(playerSelection, computerSelection = "Rock") {
         computerSelection.toLocaleLowerCase();
     }
     
-
+    var computerSelection = computerPlay();
     var result = 0; // 0 for tie, 1 for user win, -1 for computer win
     var resultMsg = ""; // empty text var for result message
 
@@ -67,24 +84,8 @@ function playRound(playerSelection, computerSelection = "Rock") {
 ;    return result;
 }
 
-function computerPlay() {
-    let computerSelection = "Rock";
-    let num = Math.random() * 3;
-    console.log(Math.ceil(num));
-
-    if ((Math.ceil(num) == 1)) {
-        return computerSelection = "Rock";
-    }
-    else if ((Math.ceil(num) == 2)) {
-        return computerSelection = "Scissors";
-    }
-    else if ((Math.ceil(num) == 3)) {
-        return computerSelection = "Paper";
-    }
-
-}
 
 var playerSelection = "paper";
-var computerSelection = null;
+
 
 console.log(playRound(playerSelection,"rock"))
