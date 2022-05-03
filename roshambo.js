@@ -75,10 +75,10 @@ function playRound(playerSelection, computerSelection) {
         resultMsg = "Tie!";
     }
     else if (result == -1) {
-        resultMsg = "Computer Win!";
+        resultMsg = `You lose! ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)} beats ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)}`;
     }
     else if (result == 1) {
-        resultMsg = "User Win!";
+        resultMsg = `You win! ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)} beats ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}`;
     }
     console.log(resultMsg)
 ;    return result;
