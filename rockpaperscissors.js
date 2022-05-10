@@ -103,7 +103,7 @@ function game (playerSelection,computerSelection) {
     let score = 0;
 
     for (let i = 0; i <5; i++) {
-
+        playerSelection = prompt("Choose rock, paper, or scissors");
         score += playRound(playerSelection,computerSelection);
         //console.log(score)
     }
@@ -111,7 +111,7 @@ function game (playerSelection,computerSelection) {
 }
 
 
-const playerSelection = prompt("Input Rock, Paper, or Scissors");
+let playerSelection = prompt("Input Rock, Paper, or Scissors");
 let computerSelection = computerPlay();
 game(playerSelection,computerSelection);
 //console.log(computerSelection);
