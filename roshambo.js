@@ -1,7 +1,7 @@
 function computerPlay() {
     let computerSelection = null;
     let num = Math.random() * 3;
-    console.log(Math.ceil(num));
+    //console.log(Math.ceil(num));
 
     if ((Math.ceil(num) == 1)) {
         return computerSelection = "rock";
@@ -80,10 +80,19 @@ function playRound(playerSelection, computerSelection) {
     else if (result == 1) {
         resultMsg = `You win! ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)} beats ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)}`;
     }
-    console.log(resultMsg)
-;    return result;
+    console.log(resultMsg);
+        return result;
 }
 
+
+function game() {
+    let score = 0;
+    for (let i = 0; i < 5; i++) {
+        score = playRound(playerSelection,computerSelection);
+        console.log(score)
+    }
+
+}
 
 var playerSelection = "paper";
 
